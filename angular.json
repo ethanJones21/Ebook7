@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Ebook7"
+    }
+  },
+  "defaultProject": "Ebook7",
+  "cli": {
+    "analytics": "341a744c-8cfe-4340-bd27-b1eef7fe7725"
+  }
 }
