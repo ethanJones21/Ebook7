@@ -1,0 +1,58 @@
+{
+    "books": [
+        {
+            "id": 1,
+            "name": "Nivel 7",
+            "author": "Owin",
+            "popularity": "0",
+            "imgPortada": "https://i.pinimg.com/originals/a8/b9/ff/a8b9ff74ed0f3efd97e09a7a0447f892.jpg",
+            "npages": 150,
+            "genre": "Fiction"
+        },
+        {
+            "id": 2,
+            "name": "Ethan Jones",
+            "author": "Owin",
+            "popularity": "0",
+            "imgPortada": "https://www.abebooks.com/blog/wp-content/uploads/2016/08/10.jpg",
+            "npages": 150,
+            "genre": "Action"
+        },
+        {
+            "id": 3,
+            "name": "Nivel 7 - Amor de cristal",
+            "author": "Owin",
+            "popularity": "0",
+            "imgPortada": "https://images-na.ssl-images-amazon.com/images/I/81af+MCATTL.jpg",
+            "npages": 150,
+            "genre": "Fiction"
+        },
+        {
+            "id": 4,
+            "name": "Ethan Jones - Comienzo",
+            "author": "Owin",
+            "popularity": "0",
+            "imgPortada": "https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg",
+            "npages": 150,
+            "genre": "Science"
+        },
+        {
+            "id": 5,
+            "name": "Nivel 7 - Amor de cristal",
+            "author": "Owin",
+            "popularity": "0",
+            "imgPortada": "https://i.pinimg.com/originals/a8/b9/ff/a8b9ff74ed0f3efd97e09a7a0447f892.jpg",
+            "npages": 150,
+            "genre": "Philosophy"
+        },
+        {
+            "id": 6,
+            "name": "Ethan Jones - Comienzo",
+            "author": "Owin",
+            "popularity": "0",
+            "imgPortada": "https://images-na.ssl-images-amazon.com/images/I/81UWB7oUZ0L.jpg",
+            "npages": 150,
+            "genre": "Action"
+        }
+    ]
+}

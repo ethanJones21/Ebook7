@@ -1,0 +1,26 @@
+<div class="book-cell" [ngStyle]="{'background-image': conUrl(book.imgPortada)}">
+    <div class="book-contain">
+        <div class="book-img">
+            <img
+                [src]=book.imgPortada
+                [alt]=book.name
+                class="book-photo"
+            />
+        </div>
+        <div class="book-content">
+            <div class="book-title">{{book.name}}</div>
+            <div class="book-author">by {{book.author}}</div>
+            <app-rating [starsWhite]=false></app-rating>
+            <div class="book-sum">
+                Readers of all ages and walks of life have drawn inspiration and
+                empowerment from Elizabeth Gilbert’s books for years.
+            </div>
+            <div [ngClass]="{
+                'book-purple': book.genre==='Action',
+                'book-green': book.genre==='Philosophy' || book.genre=== 'Science'
+            }" class="book-see">See The Book</div>
+        </div>
+    </div>
+</div>
+
+

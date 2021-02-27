@@ -1,0 +1,8 @@
+<owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let book of books">
+        <ng-template carouselSlide>
+            <app-carousel-card [book]="book"></app-carousel-card>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+

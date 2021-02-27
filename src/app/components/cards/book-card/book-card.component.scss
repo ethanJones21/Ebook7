@@ -1,0 +1,167 @@
+@import '_colors';
+@import '_fonts';
+@import '_shadows';
+
+%display {
+    display: flex;
+    align-items: center;
+}
+
+.book-sum {
+    margin-top: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.book-see {
+    margin-top: 25px;
+    text-align: center;
+    background-color: $white;
+    color: $color-primary;
+    font-weight: 600;
+    padding: 8px;
+    font-size: 14px;
+    width: 160px;
+    border-radius: 20px;
+    &:hover {
+        color: $color-primary;
+    }
+    &.book-purple {
+        color: $color-secondary;
+        &:hover {
+            color: $color-secondary-alt;
+        }
+    }
+    &.book-yellow {
+        color: $color-third;
+        &:hover {
+            color: $color-third-alt;
+        }
+    }
+}
+
+// .repetidos
+
+.book-card {
+    margin-top: 20px;
+    background-color: $white;
+    height: 270px;
+    box-shadow: $shadow-dark;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 0 0 20px 20px;
+    color: $color-font-secondary;
+}
+
+.book-card-img {
+    width: 160px;
+    margin-top: -35px;
+    border-radius: 2px;
+    box-shadow: $shadow2;
+    border-bottom: $border-bottom;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+    &:hover {
+    transform: scale(1.04);
+    }
+}
+
+.card-content {
+    color: $color-font-primary;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.book-name {
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.book-by {
+    font-size: 13px;
+    color: $color-font-secondary;
+    margin-top: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+.card-sum {
+    color: $color-font-secondary;
+    font-size: 13px;
+    line-height: 1.6em;
+    -webkit-line-clamp: 4;
+    margin-top: 15px;
+}
+
+.content-wrapper {
+    display: flex;
+    border-bottom: $border-bottom2;
+    position: relative;
+    &:before {
+    content: "";
+    position: absolute;
+    background-color: $header-gray;
+    box-shadow: $shadow3;
+    width: 4px;
+    height: 4px;
+    border: 0;
+    padding: 0;
+    right: 12px;
+    top: 17px;
+    border-radius: 50%;
+    margin-left: auto;
+    }
+}
+
+.like-profile {
+    margin-top: 8px;
+    & + & {
+    margin-left: -5px;
+    }
+}
+
+.like-img {
+    border-radius: 50%;
+    width: 28px;
+    object-fit: cover;
+    border: 2px solid $white;
+}
+
+.like-name {
+    font-size: 13px;
+    margin-left: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    span {
+    font-weight: 600;
+    }
+}
+
+.likes {
+    @extend %display;
+}
+
+@media (max-width: 1220px) {
+    .card-vote {
+        display: none;
+    }
+}
+
+@media (max-width: 372px) {
+    .card-content {
+        padding: 20px;
+    }
+}

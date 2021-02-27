@@ -1,0 +1,163 @@
+@import '_colors';
+@import '_fonts';
+@import '_shadows';
+
+%display {
+    display: flex;
+    align-items: center;
+}
+
+.book-cell {
+    height: 250px;
+    cursor: pointer;
+}
+
+.book-contain{
+    height: 100%;
+    display: flex;
+    padding: 25px;
+    z-index: 2;
+    background-color: $color-secondary-rgba1;
+}
+
+.book-img {
+    flex-shrink: 0;
+    width: 40%;
+}
+
+.book-photo {
+    width: 180px;
+    flex-shrink: 0;
+    bottom: -35px;
+    left: 35px;
+    border-radius: 2px;
+    box-shadow: $shadow1;
+    transition: 0.3s ease;
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+// content
+
+.book-content {
+    padding: 0 20px;
+    color: $white;
+    overflow: hidden;
+}
+
+.book-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: $white;
+    font-weight: 600;
+}
+
+.book-author {
+    margin-top: 3px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+// .purple > input:checked ~ label,
+// .purple:not(:checked) > label:hover,
+// .purple:not(:checked) > label:hover ~ label {
+//     color: $color-secondary
+// }
+// .purple > input:checked + label:hover,
+// .purple > input:checked ~ label:hover,
+// .purple > label:hover ~ input:checked ~ label,
+// .purple > input:checked ~ label:hover ~ label {
+//     color: $color-secondary
+// }
+
+// .yellow > input:checked ~ label,
+// .yellow:not(:checked) > label:hover,
+// .yellow:not(:checked) > label:hover ~ label {
+//     color: $color-third;
+// }
+// .yellow > input:checked + label:hover,
+// .yellow > input:checked ~ label:hover,
+// .yellow > label:hover ~ input:checked ~ label,
+// .yellow > input:checked ~ label:hover ~ label {
+//     color: $color-third;
+// }
+
+.book-sum {
+    margin-top: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.book-see {
+    margin-top: 25px;
+    text-align: center;
+    background-color: $white;
+    color: $color-primary;
+    font-weight: 600;
+    padding: 8px;
+    font-size: 14px;
+    width: 150px;
+    border-radius: 20px;
+    &:hover {
+        background: $color-primary;
+        color: $white;
+    }
+    &.book-purple {
+        color: $color-secondary;
+        &:hover {
+            background: $color-secondary;
+            color: $white;
+        }
+    }
+    &.book-green {
+        color: $color-fourth;
+        &:hover {
+            background: $color-fourth;
+            color: $white;
+        }
+    }
+}
+
+@media (max-width: 1103px) {
+    .book-cell {
+        width: 60%;
+    }
+}
+
+@media (max-width: 765px) {
+    .book-cell {
+        width: 80%;
+    }
+}
+
+@media (max-width: 575px) {
+    .book-cell {
+        width: 100%;
+    }
+}
+
+@media (max-width: 458px) {
+    .book-photo {
+        width: 180px;
+    }
+    .book-voters {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .book-see {
+        width: 120px;
+        font-size: 13px;
+    }
+    .book-photo {
+        width: 130px;
+    }
+}
